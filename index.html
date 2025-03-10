@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .heart {
+            font-size: 5rem;
+            animation: heartbeat 1.5s infinite;
+            margin: 2rem 0;
+            color: #ff4646;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            padding: 0 1rem;
+            text-align: left;
+            white-space: pre-line;
+        }
+
+        .signature {
+            font-style: italic;
+            margin-top: 2rem;
+            font-size: 1.3rem;
+        }
+
+        .name {
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .letter {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            color: #333;
+            margin: 2rem 0;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .ps {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            color: #ff4646;
+        }
+
+        .memory-panels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .memory-panel {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #333;
+        }
+
+        .memory-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .memory-panel .front {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff4646;
+        }
+
+        .memory-panel .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            transform: rotateY(90deg);
+            transition: transform 0.5s ease;
+            font-size: 0.9rem;
+        }
+
+        .memory-panel.flipped .front {
+            opacity: 0;
+        }
+
+        .memory-panel.flipped .back {
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry</h1>
+        <div class="heart">❤️</div>
+        <div class="memory-panels">
+            <div class="memory-panel" onclick="this.classList.toggle('flipped')">
+                <div class="front">💝 Why I Love You</div>
+                <div class="back">Your smile brightens my darkest days, and your love makes everything better. You're the most beautiful soul I've ever known.</div>
+            </div>
+            <div class="memory-panel" onclick="this.classList.toggle('flipped')">
+                <div class="front">✨ Our Best Memory</div>
+                <div class="back">Remember that date when we said "I love you"? That magical moment when time stood still and I knew you were the one. Every moment with you since then has been a blessing.</div>
+            </div>
+            <div class="memory-panel" onclick="this.classList.toggle('flipped')">
+                <div class="front">🌟 My Promise</div>
+                <div class="back">I promise to cherish you more, listen better, and be the person you deserve. Your happiness means everything to me.</div>
+            </div>
+        </div>
+        <div class="letter">
+            <div class="message">
+My dear Rimy,
+
+I know words might not be enough to express how truly sorry I am, but I hope this message finds its way to your heart. I've been reflecting deeply on what happened, and I realize now more than ever how much you mean to me.
+
+Sometimes we hurt the ones we love the most, not because we want to, but because we're human and we make mistakes. I never meant to cause you any pain or sadness. You deserve nothing but happiness, love, and respect.
+
+What makes you special isn't just your beautiful smile or the way you light up any room you enter – it's your kind heart, your understanding nature, and how you make everyone around you feel special. I took that for granted, and I'm truly sorry.
+
+I miss the little things: your laugh, the way you scrunch your nose when you're thinking, and how you always know exactly what to say to make everything better. I miss us.
+
+I promise to:
+- Be more thoughtful and considerate
+- Listen more and assume less
+- Show you every day how much you mean to me
+- Learn from this mistake and grow to be better for you
+
+You're not just my girlfriend; you're my best friend, my confidante, and my favorite person in the whole world. I hope you can find it in your heart to forgive me.
+
+I love you more than words can express.
+            </div>
+            <div class="signature">
+                With all my love and regret,
+                <div class="name">Your Bewara</div>
+            </div>
+            <div class="ps">
+                P.S. Every moment without your smile feels like an eternity. I'm here, waiting, hoping, and loving you through it all.
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
